@@ -1,0 +1,15 @@
+# Python
+*.pyc
+*.pyo
+__pycache__
+
+# Django
+db.sqlite3
+*.log
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
