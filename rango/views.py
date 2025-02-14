@@ -29,6 +29,7 @@ def index(request):
 def about(request):
     print(request.method)
     print(request.user)
+
     return render(request, 'rango/about.html')
 
 def show_category(request, category_name_slug):
@@ -197,5 +198,3 @@ def user_logout(request):
     logout(request)
     # Take the user back to the homepage.
     return redirect(reverse('rango:index'))
-
-request.session.set_test_cookie()
