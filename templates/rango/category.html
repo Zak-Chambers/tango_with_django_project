@@ -24,10 +24,11 @@
             {% endif %}
         </div>
         {% if category %}
-        <div>
-            <a href="{% url 'rango:show_category' category.slug %}">View{{ category.name }}</a>
-        </div>
+            <a href="{% url 'rango:add_page' category.slug %}">Add Page</a> <br/>
+        {% else %}
+            <p>The specified category does not exist.</p>
         {% endif %}
+    
 
         <div>
             <li><a href="{% url 'rango:index' %}">Home</a>
